@@ -14,7 +14,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="semestralka2/index1.css" type="text/css">
-
+    <script src="semestralka2/javascript.js" async></script>
 </head>
 <body>
 
@@ -28,7 +28,7 @@
         </ul>
         <?php if (\App\Auth::isLogged()) { ?>
         <ul class="nav">
-            <li class="nav-item fa fa-shopping-cart py-1" style="color:white"><a href="#" class="px-1" id="kusy">0</a></li>
+            <li class="nav-item fa fa-shopping-cart py-1" style="color:white"><a href="#" class="px-1" id="vKosiku">0</a></li>
             <li class="nav-item"><a href="?c=home&a=loggedUser" class="px-2">Môj účet</a></li>
             <li class="nav-item"><a href="?c=auth&a=logout" class="px-2">Logout</a></li>
         </ul>
@@ -43,14 +43,14 @@
 </nav>
 <header class="py-3 mb-4">
     <div class="container d-flex flex-wrap justify-content-center">
-        <a href="index1.html"><img src="https://fontmeme.com/permalink/211013/ae661bb1485a4a85200935c040313177.png" class="img-fluid" alt="Second hand u Inky"></a>
+        <a href="#"><img src="https://fontmeme.com/permalink/211013/ae661bb1485a4a85200935c040313177.png" class="img-fluid" alt="Second hand u Inky"></a>
     </div>
 </header>
 
 <div class="modal" id="myModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-body" id="aa">
+            <div class="modal-body" id="textInModal">
                 <p></p>
             </div>
             <div class="modal-footer">
@@ -116,13 +116,12 @@
             <button type="button" class="btn btn-light" id="myBtn" data-mdb-ripple-color="dark" style="color: #999900">Skús šťastie!</button>
         </div>
         <div class="col m-2">
-            <button onclick="myFunction()" type="button" class="btn btn-light" data-mdb-ripple-color="dark" style="color: #999900">Tmavý režim</button>
+            <button onclick="setMode()" type="button" class="btn btn-light" data-mdb-ripple-color="dark" style="color: #999900">Tmavý režim</button>
         </div>
         <hr class="solid">
         <span>Second Hand u Inky<br>
           Jedinečné, kvalitné a lacné kúsky pre každého.</span>
     </div>
 </footer>
-<script src="semestralka2/javascript.js"></script>
 </body>
 </html>
